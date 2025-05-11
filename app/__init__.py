@@ -6,8 +6,8 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
     
-    # Example config — replace with your actual DB URI
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:password@db:5432/yourdbname'
+    # actual DB URI
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@meetingdb.cj20m40eazwi.eu-north-1.rds.amazonaws.com/meetings'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     db.init_app(app)
