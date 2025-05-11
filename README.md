@@ -53,7 +53,7 @@ docker-compose up --build
 4. Load sample data:
 
 ```bash
-docker exec -it meeting-api python sample_data.py
+docker exec -it meeting_manager_web python sample_data.py
 ```
 
 ---
